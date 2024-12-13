@@ -80,3 +80,76 @@ h1, h2, p{
     height: 300px;
     align-items: end;
 }
+.itens25{
+    height: 200px;
+    
+}
+.itens26{
+    height: 60px
+}
+.itens27{
+    height: 50px;
+}
+.center33{
+    height: 70px;
+
+}
+.center31{
+    height: 120px;
+
+}
+.center32{
+    height: 200px;
+}
+.start28{
+    height: 50px;
+    align-self: end;
+}
+.start29{
+    height: 75px;
+    align-self: center;
+}
+.start30{
+    height: 100px;
+    align-self: flex-start;
+}
+.end31{
+    height: 100px;
+}
+.end32{
+    height: 250px;
+}
+.end33{
+    height: 25px;
+}
+.center12{
+    width: 200px;
+    height: 100px;
+}
+.center11{
+    height: 50px;
+}
+.center10{
+    height: 25px;
+}
+.nav-pai{
+    display: flex;
+    background-color: grey;
+    justify-content: end;
+    padding: 15px;
+    color: white;
+    gap: 60px;
+
+}
+.nav-pai a{
+    color: white;    
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin-right: 30px;
+}
+.nav-pai a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
