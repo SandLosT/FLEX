@@ -1,0 +1,155 @@
+/*O flex vai sempre se ajustar independente da quantidade de elementos que tenhamos*/
+h1, h2, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*componente pai onde é aplicado o flex*/
+/*quando aplicado um display flex o padrão da direção dos itens é em row ou na horizontal*/
+.container-flex{
+    /*Ativamos um flex utilizando uma classe pai e anotando-a com "display: flex;"*/
+    display: flex;
+   
+    background-color: aqua;
+    /*GAP É O ESPAÇAMENTO ENTRE OS ITENS E ELE PODE SER UTILIZADO NO COMPONENTE PAI*/
+    gap: 15px;
+    /*EM FLEX-DIRECTION TEMOS AS POSSIVEIS DIREÇÕES DOS ITENS, ISSO É DEFINIDO NO COMPONENTE PAI*/
+    flex-direction: column ;
+    
+}
+
+/*itens filhos que estão dentro do componente flex pai*/
+.itens-flex{
+    background-color: red;
+    padding: 15px;
+    color: white;
+    /*MAS CASO QUEIRA ADICIONAR O ESPAÇAMENTO NO CONTAINER FILHO VOCÊ PODE UTILIZAR O MARGIN*/
+
+}
+/*Quebra de linha == wrap dessa forma temos uma responsividade padrão*/
+/*os valores default na hora de definir um displey flex são flex-direction: row, flex-wrep: no-wrep*/
+.whap{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*justitfy content é uma manira de trabalhar com o posicionamento dos itens na horizontal*/
+.justificar-inicial{
+    flex-direction: row;
+    justify-content: initial;
+}
+.justificar-center{
+    flex-direction: row;
+    justify-content: center;
+}
+.justificar-end{
+    flex-direction: row;
+    justify-content: end;
+}
+/*o space-between vai espaçar os itens na maxima largura que você tem na tela mantendo o mesmo espaçamento entre os itens*/
+.justificar-spacebetween{
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*O spacearound é quase a mesma coisa que o spacebetween a unica diferença é que ele deixa um respiro aos redores também*/
+.justificar-spacearound{
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*O spaceevenly ele adiciona um espaçamento igual tanto entre os itens quanto ao redor dos itens*/
+.justificar-evenly{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*O align-itens é uma forma de organizar os itens verticalmente */
+/*A propriedade padrão do align-itens é o stretch que procura ocupar o maior espaço possivel*/
+.align-itens{
+    align-items: stretch;
+    flex-direction: row;
+    height: 300px;
+}
+.align-start{
+    flex-direction: row ;
+    height: 300px;
+    align-items: start;
+}
+.align-center{
+    flex-direction: row ;
+    height: 300px;
+    align-items: center;
+}
+.align-end{
+    flex-direction: row ;
+    height: 300px;
+    align-items: end;
+}
+.itens25{
+    height: 200px;
+    
+}
+.itens26{
+    height: 60px
+}
+.itens27{
+    height: 50px;
+}
+.center33{
+    height: 70px;
+
+}
+.center31{
+    height: 120px;
+
+}
+.center32{
+    height: 200px;
+}
+.start28{
+    height: 50px;
+    align-self: end;
+}
+.start29{
+    height: 75px;
+    align-self: center;
+}
+.start30{
+    height: 100px;
+    align-self: flex-start;
+}
+.end31{
+    height: 100px;
+}
+.end32{
+    height: 250px;
+}
+.end33{
+    height: 25px;
+}
+.center12{
+    width: 200px;
+    height: 100px;
+}
+.center11{
+    height: 50px;
+}
+.center10{
+    height: 25px;
+}
+.nav-pai{
+    display: flex;
+    background-color: grey;
+    justify-content: end;
+    padding: 15px;
+    color: white;
+    gap: 60px;
+
+}
+.nav-pai a{
+    color: white;    
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    margin-right: 30px;
+}
+.nav-pai a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
